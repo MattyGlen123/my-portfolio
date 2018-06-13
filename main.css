@@ -1,0 +1,421 @@
+/******************************
+            General
+******************************/
+body {
+  min-width: 320px;
+  margin: 0 auto;
+  font-family: 'Montserrat', 'Roboto', arial, sans-serif;
+  background-color: #c2e4df;
+  background-image:
+  linear-gradient(to right, #ffbec0 50%, #c2e4df 50%);
+}
+
+a {
+  text-decoration: none;
+}
+
+/******************************
+        Main Navigation
+******************************/
+.nav-container {
+  padding: 0 1em;
+  display: flex;
+  background-color: rgba(73,77,89, 0.6);
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.site-logo {
+  font-size: 1.2em;
+  color: #fefcf5;
+  padding: .7em 0 .4em .4em;
+}
+
+.navbar-link-toggle {
+  display: none;
+}
+
+.nav-items {
+  display: flex;
+}
+
+.nav-items-right {
+  margin-left: auto;
+}
+
+.nav-item a {
+  text-decoration: none;
+  display: block;
+  font-size: 1.125em;
+  font-weight: 600;
+  margin-right: 1em;
+  padding: .8em 1em;
+  color: #fefcf5;
+  border-bottom: 1px solid #fefcf5;
+}
+
+.nav-container a:hover,
+.navbar-link-toggle:hover i {
+  color: #fdbbb9;
+}
+
+.site-logo:hover i {
+  color: #c2e4df;
+}
+
+.nav-item a:hover {
+  border-bottom: 1px solid #fdbbb9;
+}
+
+/******************************
+            Header
+******************************/
+
+.main-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FDFFFC;
+}
+
+.main-header h1 {
+  background: rgba(73,77,89, 0.6);
+  padding: .5em;
+  letter-spacing: 4px;
+  font-size: 1.5em;
+  font-family: 'Montserrat';
+}
+
+.main-header {
+  height: 100vh;
+  background: url('https://res.cloudinary.com/drldpyegp/image/upload/v1526576091/pexels-photo-1037993.jpg') no-repeat center;
+  background-size: cover;
+}
+
+/******************************
+           Projects
+******************************/
+.projects-container {
+  max-width: 1500px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+.project {
+  min-height: 300px; 
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.project a {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.project img {
+  width: 250px;
+  margin: auto auto;
+}
+
+.project h3 {
+  margin: auto 0 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 20px;
+  transition: transform .3s ease-out;
+  opacity: 0;
+  transform: translateY(100%);
+}
+
+.project:hover h3 {
+  opacity: 1;
+  transform: translateY(0%);
+}
+
+.project-one {
+  background: #5B5159;
+}
+
+.project-two {
+  color: white;
+  background: black;
+}
+
+.project-two h2 {
+  text-align: center;
+  margin-top: 0.1em;
+  font-size: 3em;
+  color: #ff8002;
+}
+
+.project-two i {
+  font-size: 7em;
+  margin: .9em auto 0;
+  color: #ff8002;
+}
+
+.project-three {
+  background: #32113A;
+}
+
+.project-three i {
+  font-size: 7em;
+  margin: .9em auto 0;
+  color: #F0A900;
+}
+
+.project-four {
+  background: #9AACB8;
+  color: red;
+}
+
+.project-four h2 {
+  text-align: center;
+  font-size: 5em;
+  font-weight: 900;
+  color: #351C4D;
+  margin-top: 1.5em;
+}
+
+.project-four h2::first-letter {
+  color: #FF7E5F;
+}
+
+.project-four h2 .letter3 {
+  color: #FEB47B;
+}
+
+.project-four h2 .letter4 {
+  color: #765285;
+}
+
+.project-five {
+  background: url(https://res.cloudinary.com/drldpyegp/image/upload/v1528236120/pexels-photo-924824.jpg) no-repeat center;
+}
+
+.project-five img {
+  padding-top: 2.2em;
+  width: 200px;
+}
+
+.project-six {
+  background: #5B5159;
+}
+
+.project-six h2 {
+  text-align: center;
+  font-size: 3em;
+  color: white;
+  margin-top: 2.5em;
+}
+
+/******************************
+           Contact Me
+******************************/ 
+
+.picture {
+  border-radius: 100%;
+  height: 320px;
+  width: 320px;
+  position: relative;
+  bottom: -160px;
+  display: block;
+  margin: 0 auto;
+  border: 10px solid white;
+}
+
+.background-theme {
+  padding: 150px 0 30px;
+  background: url(https://res.cloudinary.com/drldpyegp/image/upload/v1526563163/beach-beverage-caribbean-cocktail-68672.jpg) no-repeat center center fixed;
+  border-top: 10px solid white;
+}
+
+.bio-container {
+  padding: 1.5em;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: minmax(150px, 1fr);
+  grid-gap: 20px;
+  grid-template-areas: 
+    "about-me-container" 
+    "btn-container";
+}
+
+.about-me-container {
+  max-width: 425px;
+  grid-area:  about-me-container;
+}
+
+.about-me-container p {
+  line-height: 1.8em;
+}
+
+.btn-container {
+  grid-area:  btn-container;
+}
+
+.bio-container .contact-sub-headings {
+  font-size: 2.5em;
+  color: #494d59;
+}
+
+.random-facts-list {
+  list-style: none;
+  padding-left: 0;  
+}
+
+.random-facts-heading {
+  font-size: 1.4em;
+  padding-bottom: 5px;
+  color: #494d59;
+}
+
+.random-facts-list li {
+  padding: 8px 0;  
+}
+
+.twitter-btn,
+.linkedin-btn,
+.email-btn,
+.freeCodeCamp-btn {
+  width: 200px;
+  height: 40px;
+  font-size: 1.3em;
+  margin: 10px auto 10px auto;
+  padding: .5em;
+  border-radius: 5px;
+  color: white;
+  border: 0;
+  box-shadow: 0 8px 6px -6px black;
+}
+
+.twitter-btn {
+  background: #0084b4;
+  border-bottom: 4px solid #003e5e;
+}
+.linkedin-btn {
+  background: #0e76a8;
+  border-bottom: 4px solid #003e5e;
+}
+.email-btn {
+  background: #4868ad;
+  border-bottom: 4px solid #2f4370;
+}
+
+.freeCodeCamp-btn {
+  background: #006400;
+  border-bottom: 4px solid #005400;
+}
+
+/******************************
+            Footer
+******************************/
+footer,
+.footer-links-container {
+  display: flex;
+}
+
+footer {
+  color: white;
+  background: #494d59;
+  flex-direction: row;
+  align-items: center;
+  min-width: 300px;
+}
+
+.footer-links-container {
+  list-style-type: none; 
+}
+
+.footer-link {
+  display: block;
+  text-align: center;
+  padding: .4em;
+}
+
+.footer-link a {
+  color: white;
+}
+
+.copyRight-container {
+  margin-left: auto;
+  padding-right: 1em;
+}
+
+
+/******************************
+            Media Query
+******************************/
+
+@media(min-width: 380px) {
+  .main-header h1 {
+    font-size: 2em;
+  }
+}
+
+@media(min-width: 576px) {
+  .main-header h1 {
+    font-size: 3em;
+  }
+  .projects-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .bio-container {
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: 
+      "about-me-container btn-container" 
+  }
+}
+
+
+@media(max-width: 576px) {
+  .navbar-link-toggle {
+    align-self: flex-end;
+    display: initial;
+    position: absolute;
+    cursor: pointer;
+    color: white;
+    padding: .5em;
+    font-size: 2em;
+  }
+  .nav-items,
+  .nav-container {
+    flex-direction: column;
+  }
+  
+  .nav-items {
+    display: none;
+  }
+  .nav-items-right {
+    margin-left: 0;
+  }
+  
+  .nav-toggleShow {
+    display: flex;
+  }  
+}
+
+@media(min-width: 768px) {
+  .twitter-btn,
+  .linkedin-btn,
+  .email-btn,
+  .freeCodeCamp-btn {
+    display: block;
+    margin: 20px auto 0 0;
+  }
+}
+
+@media(min-width: 992px) {
+  .projects-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .about-me-container {
+    justify-self: center;
+  }
+}
