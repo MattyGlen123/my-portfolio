@@ -142,20 +142,20 @@ a {
 
 .project-two {
   color: white;
-  background: black;
+  background: #003D5B;
 }
 
 .project-two h2 {
   text-align: center;
   margin-top: 0.1em;
   font-size: 3em;
-  color: #ff8002;
+  color: #9C9196;
 }
 
 .project-two i {
   font-size: 7em;
   margin: .9em auto 0;
-  color: #ff8002;
+  color: #9C9196;
 }
 
 .project-three {
@@ -203,14 +203,12 @@ a {
 }
 
 .project-six {
-  background: #5B5159;
+  background: #EDAE49;
 }
 
-.project-six h2 {
-  text-align: center;
-  font-size: 3em;
-  color: white;
-  margin-top: 2.5em;
+.project-six img {
+  padding-top: 1.2em;
+  width: 300px;
 }
 
 /******************************
