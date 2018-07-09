@@ -250,6 +250,7 @@ a {
 
 .about-me-container p {
   line-height: 1.8em;
+  font-weight: bold;
 }
 
 .btn-container {
@@ -258,18 +259,18 @@ a {
 
 .bio-container .contact-sub-headings {
   font-size: 2.5em;
-  color: #494d59;
 }
 
 .random-facts-list {
   list-style: none;
-  padding-left: 0;  
+  padding-left: 0;
+  font-weight: bold; 
 }
 
 .random-facts-heading {
   font-size: 1.4em;
   padding-bottom: 5px;
-  color: #494d59;
+  font-weight: bolder;
 }
 
 .random-facts-list li {
