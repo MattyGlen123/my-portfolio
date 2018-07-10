@@ -281,14 +281,14 @@ a {
 .linkedin-btn,
 .email-btn,
 .freeCodeCamp-btn {
+  display: inline-block;
+  text-align: center;
   width: 200px;
-  height: 40px;
   font-size: 1.3em;
   margin: 10px auto 10px auto;
   padding: .5em;
   border-radius: 5px;
   color: white;
-  border: 0;
   box-shadow: 0 8px 6px -6px black;
 }
 
