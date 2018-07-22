@@ -72,25 +72,22 @@ a {
             Header
 ******************************/
 
-.main-header {
+.header {
   display: flex;
   justify-content: center;
   align-items: center;
   color: #FDFFFC;
+  height: 100vh;
+  background: url('https://res.cloudinary.com/drldpyegp/image/upload/v1526576091/pexels-photo-1037993.jpg') no-repeat center;
+  background-size: cover;
 }
 
-.main-header h1 {
+.header__title {
   background: rgba(73,77,89, 0.6);
   padding: .5em;
   letter-spacing: 4px;
   font-size: 1.5em;
   font-family: 'Montserrat';
-}
-
-.main-header {
-  height: 100vh;
-  background: url('https://res.cloudinary.com/drldpyegp/image/upload/v1526576091/pexels-photo-1037993.jpg') no-repeat center;
-  background-size: cover;
 }
 
 /******************************
@@ -103,25 +100,25 @@ a {
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 }
 
-.project {
+.card {
   min-height: 300px; 
   display: flex;
   flex-direction: column;
   overflow: hidden;
 }
 
-.project a {
+.card__link {
   flex-grow: 1;
   display: flex;
   flex-direction: column;
 }
 
-.project img {
+.card__img {
   width: 250px;
   margin: auto auto;
 }
 
-.project h3 {
+.card__title {
   margin: auto 0 0;
   background: rgba(0, 0, 0, 0.5);
   color: white;
@@ -131,49 +128,49 @@ a {
   transform: translateY(100%);
 }
 
-.project:hover h3 {
+.card:hover .card__title {
   opacity: 1;
   transform: translateY(0%);
 }
 
-.project-one {
+.card__one {
   background: #5B5159;
 }
 
-.project-two {
+.card__two {
   color: white;
   background: #003D5B;
 }
 
-.project-two h2 {
+.card__two--weather-text {
   text-align: center;
   margin-top: 0.1em;
-  font-size: 3em;
+  font-size: 3rem;
   color: #9C9196;
 }
 
-.project-two i {
+.card__two--icon {
   font-size: 7em;
   margin: .9em auto 0;
   color: #9C9196;
 }
 
-.project-three {
+.card__three {
   background: #32113A;
 }
 
-.project-three i {
+.card__three--icon {
   font-size: 7em;
   margin: .9em auto 0;
   color: #F0A900;
 }
 
-.project-four {
+.card__four {
   background: #9AACB8;
   color: red;
 }
 
-.project-four h2 {
+.card__four--search-text {
   text-align: center;
   font-size: 5em;
   font-weight: 900;
@@ -181,41 +178,36 @@ a {
   margin-top: 1.5em;
 }
 
-.project-four h2::first-letter {
+.card__four--search-text::first-letter {
   color: #FF7E5F;
 }
 
-.project-four h2 .letter3 {
+.card__four--letter3 {
   color: #FEB47B;
 }
 
-.project-four h2 .letter4 {
+.card__four--letter4 {
   color: #765285;
 }
 
-.project-five {
+.card__five {
   background: url(https://res.cloudinary.com/drldpyegp/image/upload/v1528236120/pexels-photo-924824.jpg) no-repeat center;
 }
 
-.project-five img {
+.card__img {
   padding-top: 2.2em;
-  width: 200px;
+  width: 250px;
 }
 
-.project-six {
+.card__six {
   background: #EDAE49;
-}
-
-.project-six img {
-  padding-top: 1.2em;
-  width: 300px;
 }
 
 /******************************
            Contact Me
 ******************************/ 
 
-.picture {
+.round__img {
   border-radius: 100%;
   height: 320px;
   width: 320px;
@@ -226,61 +218,65 @@ a {
   border: 10px solid white;
 }
 
-.background-theme {
+.content-secondary {
   padding: 150px 0 30px;
   background: url(https://res.cloudinary.com/drldpyegp/image/upload/v1526563163/beach-beverage-caribbean-cocktail-68672.jpg) no-repeat center center fixed;
   border-top: 10px solid white;
 }
 
-.bio-container {
+.contact-container {
   padding: 1.5em;
   display: grid;
   grid-template-columns: 1fr;
   grid-auto-rows: minmax(150px, 1fr);
   grid-gap: 20px;
   grid-template-areas: 
-    "about-me-container" 
-    "btn-container";
+    "about-me" 
+    "links-box";
 }
 
-.about-me-container {
+.about-me {
   max-width: 425px;
-  grid-area:  about-me-container;
+  grid-area:  about-me;
 }
 
-.about-me-container p {
+.about-me__text {
   line-height: 1.8em;
   font-weight: bold;
 }
 
-.btn-container {
-  grid-area:  btn-container;
-}
-
-.bio-container .contact-sub-headings {
+.about-me__title {
+  text-transform: uppercase;
   font-size: 2.5em;
 }
 
-.random-facts-list {
+.about-me__list {
   list-style: none;
   padding-left: 0;
   font-weight: bold; 
 }
 
-.random-facts-heading {
+.about-me__sub-title {
+  text-transform: uppercase;
   font-size: 1.4em;
-  padding-bottom: 5px;
+  margin:  30px 0 0;
   font-weight: bolder;
 }
 
-.random-facts-list li {
+.about-me__list-item {
   padding: 8px 0;  
 }
 
-.twitter-btn,
-.linkedin-btn,
-.email-btn,
-.freeCodeCamp-btn {
+.links-box {
+  grid-area:  links-box;
+}
+
+.links-box__title {
+  text-transform: uppercase;
+  font-size: 2.5em;
+}
+
+.links-box__link {
   display: inline-block;
   text-align: center;
   width: 200px;
@@ -292,20 +288,20 @@ a {
   box-shadow: 0 8px 6px -6px black;
 }
 
-.twitter-btn {
+.links-box__link--twitter {
   background: #0084b4;
   border-bottom: 4px solid #003e5e;
 }
-.linkedin-btn {
+.links-box__link--linkedin {
   background: #0e76a8;
   border-bottom: 4px solid #003e5e;
 }
-.email-btn {
+.links-box__link--email {
   background: #4868ad;
   border-bottom: 4px solid #2f4370;
 }
 
-.freeCodeCamp-btn {
+.links-box__link--freeCodeCamp {
   background: #006400;
   border-bottom: 4px solid #005400;
 }
@@ -313,12 +309,9 @@ a {
 /******************************
             Footer
 ******************************/
-footer,
-.footer-links-container {
-  display: flex;
-}
 
-footer {
+.footer {
+  display: flex;
   color: white;
   background: #494d59;
   flex-direction: row;
@@ -326,21 +319,22 @@ footer {
   min-width: 300px;
 }
 
-.footer-links-container {
+.footer__link-box {
   list-style-type: none; 
+  display: flex;
 }
 
-.footer-link {
+.footer__link-item {
   display: block;
   text-align: center;
   padding: .4em;
 }
 
-.footer-link a {
+.footer__link {
   color: white;
 }
 
-.copyRight-container {
+.footer__copyRight {
   margin-left: auto;
   padding-right: 1em;
 }
@@ -351,23 +345,23 @@ footer {
 ******************************/
 
 @media(min-width: 380px) {
-  .main-header h1 {
+  .header__title {
     font-size: 2em;
   }
 }
 
 @media(min-width: 576px) {
-  .main-header h1 {
+  .header__title {
     font-size: 3em;
   }
   .projects-container {
     grid-template-columns: repeat(2, 1fr);
   }
   
-  .bio-container {
+  .contact-container {
     grid-template-columns: 2fr 1fr;
     grid-template-areas: 
-      "about-me-container btn-container" 
+      "about-me links-box" 
   }
 }
 
@@ -400,10 +394,7 @@ footer {
 }
 
 @media(min-width: 768px) {
-  .twitter-btn,
-  .linkedin-btn,
-  .email-btn,
-  .freeCodeCamp-btn {
+  .links-box__link {
     display: block;
     margin: 20px auto 0 0;
   }
@@ -414,7 +405,7 @@ footer {
     grid-template-columns: repeat(3, 1fr);
   }
   
-  .about-me-container {
+  .about-me {
     justify-self: center;
   }
 }
