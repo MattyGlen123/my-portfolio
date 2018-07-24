@@ -138,6 +138,12 @@ a {
   margin: .9em auto 0;
   color: #F0A900; }
 
+.card__three--text {
+  text-align: center;
+  margin: 0.1em 0;
+  font-size: 4rem;
+  color: #F0A900; }
+
 .card__four {
   background: #9AACB8;
   color: red; }
