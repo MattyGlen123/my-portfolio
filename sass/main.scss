@@ -210,6 +210,14 @@ a {
   background: #EDAE49;
 }
 
+.card__six--text {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  font-size: 2.5rem;
+  color: #333;
+}
+
 /******************************
            Contact Me
 ******************************/ 
@@ -250,6 +258,7 @@ a {
 .about-me__text {
   line-height: 1.8em;
   font-weight: bold;
+  
 }
 
 .about-me__title {
@@ -292,7 +301,18 @@ a {
   padding: .5em;
   border-radius: 5px;
   color: white;
-  box-shadow: 0 8px 6px -6px black;
+  box-shadow: 0 5px 6px rgba(0, 0, 0, 0.2);
+  transition: all .2s;
+}
+
+.links-box__link:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+.links-box__link:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 .links-box__link--twitter {
@@ -311,6 +331,11 @@ a {
 .links-box__link--freeCodeCamp {
   background: #006400;
   border-bottom: 4px solid #005400;
+}
+
+.links-box__link--github {
+  background: #333;
+  border-bottom: 4px solid #333;
 }
 
 /******************************
